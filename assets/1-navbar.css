@@ -1,0 +1,171 @@
+/* CSS NavBar */
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 1000;
+}
+
+nav.sticky {
+  background: transparent;
+}
+
+nav h1 a {
+  text-decoration: none;
+  font-family: "Kaushan Script", cursive;
+  /* color: #4c4a48; */
+  color: #fff;
+  /* font-weight: 700; */
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+nav.sticky h1 a {
+  font-size: 1.2em;
+  color: #ca5010;
+  transition: 0.5s;
+}
+
+nav ul {
+  position: relative;
+  display: flex;
+}
+
+nav ul li {
+  position: relative;
+  list-style: none;
+}
+
+nav ul li a {
+  font-family: "Bowlby One", cursive;
+  text-decoration: none;
+  /* color: #4c4a48; */
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  /* font-weight: 600; */
+  letter-spacing: 2px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+nav.sticky ul {
+  display: none;
+}
+
+nav ul li a:hover {
+  color: #ca5010;
+  transition: 1s;
+}
+
+nav .toggle {
+  display: none;
+}
+
+nav.sticky .toggle {
+  display: none;
+}
+
+/* Media Querys */
+
+@media (max-width: 1210px) {
+  nav ul li a {
+    font-size: 1.2em;
+    transition: 0.1s;
+  }
+}
+@media (max-width: 992px) {
+  nav {
+    /* background: #ca5010; */
+  }
+
+  nav ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 0 100px;
+    flex-direction: column;
+    justify-content: center;
+    /* padding-top: 120px; */
+    text-align: center;
+    overflow: auto;
+    transition: 0.5s;
+    background: #767676;
+    background: linear-gradient(to right, #ffb900, #f7630c);
+
+    /* color: #fff; */
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  nav.active ul {
+    opacity: 1;
+    top: 80px;
+    transform: translateY(0);
+  }
+
+  nav ul li {
+    margin: 20px 0;
+  }
+
+  nav ul li a {
+    margin: 5px 0;
+    font-size: 2em;
+  }
+
+  nav .toggle {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  nav .toggle:before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    box-shadow: 0 10px 0 #fff;
+    transition: 0.5s;
+  }
+
+  nav .toggle:after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+    transition: 0.5s;
+  }
+
+  /*
+  nav.active .toggle:before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 red;
+    background: #ff4343;
+  }
+
+  nav.active .toggle::after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+    background: #ff4343;
+  } */
+}

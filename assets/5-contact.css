@@ -1,0 +1,44 @@
+/* CSS Section - Contact */
+
+section#contact {
+  flex-direction: column;
+}
+
+section#contact .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+section#contact .container h2 {
+  font-family: "Source Code Pro", monospace;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #da3b01;
+}
+
+section#contact .container .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 25px;
+}
+
+section#contact .container .info p {
+  font-family: "Righteous", cursive;
+  width: 100%;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  /* font-weight: bolder; */
+  color: #4c9abc;
+}

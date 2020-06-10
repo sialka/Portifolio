@@ -1,0 +1,49 @@
+/* CSS Footer */
+
+footer {
+  background: #0099bc;
+  flex-direction: column;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  margin: auto auto;
+}
+
+footer .container .images {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+footer .container .images > div {
+  display: flex;
+  width: 50%;
+}
+
+footer .container .images a {
+  margin: auto auto;
+}
+
+footer .container .status {
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+
+footer .container .status p {
+  font-size: 1em;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+footer .container .status p span {
+  font-size: 0.8em;
+}

@@ -1,0 +1,42 @@
+/* CSS General */
+
+/* Geral */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+/* NavBar */
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap");
+/* Project */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+/* Contact */
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Share Tech Mono", monospace;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  min-height: 100vh;
+  justify-content: start;
+  align-items: center;
+}
+
+section:nth-child(even) {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #ffb900, #f7630c);
+}
+
+section#contact,
+footer {
+  display: flex;
+  min-height: 50vh;
+  justify-content: start;
+  align-items: center;
+}
