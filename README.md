@@ -1,5 +1,7 @@
 # Portfólio
 
+**Sidnei Monteiro**
+
 Trata-se de um simples portfólio, onde nessa primeiro momento estou listando algumas informações que achei pertinentes:
 
 - [x] Apresentação
@@ -26,10 +28,13 @@ Relatei os últimos projetos, mas para o futuro irei fazer algumas modificaçõe
 
 Já fiz inúmeros cursos, porem como o mundo da tecnologia evolui muito rápido não coloquei todos.
 
-
-
 **Considerações**
 
 Assim que novos conhecimento e projetos forem adquiridos vou atualizar o conteúdo e a dinâmica do portfólio.
 
 > Revisão 01 - 06.2020
+> Revisão 02 - 00.2020
+
+- [x] Ajustes no CSS
+- [ ] Ajustes no Redimensionamento do Conteúdo
+- [ ] Ajustando Performance do HTML
