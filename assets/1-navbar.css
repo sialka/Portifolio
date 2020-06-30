@@ -29,8 +29,10 @@ nav h1 a {
 }
 
 nav.sticky h1 a {
-  font-size: 1.2em;
+  font-size: 1em;
   color: #ca5010;
+  opacity: 0.3;
+  /* font-family: "Share Tech Mono", monospace; */
   transition: 0.5s;
 }
 
@@ -63,7 +65,10 @@ nav.sticky ul {
 }
 
 nav ul li a:hover {
-  color: #ca5010;
+  /* color: #fff; */
+  background: #ca5010;
+  border-radius: 5px;
+  padding: 0 8px;
   transition: 1s;
 }
 

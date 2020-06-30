@@ -2,6 +2,7 @@
 
 section#projects {
   flex-direction: column;
+  cursor: context-menu;
 }
 
 section#projects h2 {
@@ -12,6 +13,7 @@ section#projects h2 {
   color: #da3b01;
   font-weight: 700;
   font-family: "Source Code Pro", monospace;
+  cursor: context-menu;
 }
 
 section#projects .container {
@@ -105,7 +107,7 @@ section#projects .container .box:nth-child(odd):hover {
 section#projects .btn {
   position: absolute;
   bottom: 40px;
-  left: 32%;
+  left: 28%;
   padding: 8px 10px;
   text-decoration: none;
   font-size: 1.5em;
@@ -124,4 +126,6 @@ section#projects .container .box:hover .btn {
 section#projects .btn:hover {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 8px 10px 50px #fff;
+  transform: scale(0.9);
+  transition: 0.1s;
 }

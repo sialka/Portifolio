@@ -30,10 +30,16 @@ footer .container .images a {
   margin: auto auto;
 }
 
+footer .container .images a:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+}
+
 footer .container .status {
   display: flex;
   height: 50px;
   align-items: center;
+  cursor: context-menu;
 }
 
 footer .container .status p {
